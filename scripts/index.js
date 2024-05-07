@@ -29,3 +29,20 @@ function onHelloBtnClicked() {
    // Set the contents of the div
    messageDiv.innerHTML = "Hello World!";
 }
+// Find the clearBtn
+let clearBtn = document.getElementById("clearBtn");
+// This function is called when clearBtn is clicked
+function onClearBtnClicked() {
+    // Find the messageDiv
+    let messageDiv = document.getElementById("messageDiv");
+ 
+ 
+    // Clear the contents of the div
+    messageDiv.innerHTML = "";
+ }
+ 
+// Let clearBtn's onclick know there is a function
+// called onClearBtnClicked that should be called when
+// the button is clicked
+clearBtn.onclick = onClearBtnClicked; 
+
